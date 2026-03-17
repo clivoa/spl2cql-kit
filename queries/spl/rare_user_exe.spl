@@ -1,0 +1,4 @@
+index=win EventCode=1 FileName="*.exe"
+| search TargetFileName="*Users*"
+| stats dc(host) as uniqueHosts by FileName, TargetFileName
+| where uniqueHosts=1

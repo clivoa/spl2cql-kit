@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Logs and runtime outputs
+*.log
+runs/*
+!runs/.gitkeep
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
