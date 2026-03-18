@@ -2,6 +2,18 @@
 
 ## Usage Guide & Customization
 
+## 0. Claude Skill Usage
+
+This project now ships with a local Claude Skill:
+
+`.claude/skills/spl2cql-detection/SKILL.md`
+
+In Claude Code:
+1. Open this repository as your working directory.
+2. Ask naturally for SPL -> CQL translation, debug, or review (auto-trigger).
+3. Or invoke directly with `/spl2cql-detection`.
+4. Edit prompts/docs in `ai/` and `docs/` normally; no copy/sync into `.claude/skills` is required.
+
 ## 1. Overview
 
 This project provides a structured, repeatable workflow to: - Translate

@@ -2,6 +2,24 @@
 
 This kit professionalizes SPL to CrowdStrike LogScale translation with Claude.
 
+## Claude Skill (project-local)
+
+This repository now includes a project skill at:
+
+`.claude/skills/spl2cql-detection/SKILL.md`
+
+In Claude Code, this skill can be:
+- auto-triggered when you ask for SPL -> CQL translation/debug/review
+- invoked directly with `/spl2cql-detection`
+
+Optional workflow wrapper bundled with the skill:
+
+```bash
+.claude/skills/spl2cql-detection/scripts/run_workflow.sh --help
+```
+
+Note: the skill uses `ai/`, `docs/`, and `scripts/` directly as the single source of truth (no mirrored prompt/docs files inside `.claude/skills`).
+
 ## Included
 - `CLAUDE.md`: persistent project instructions
 - `ai/prompts/`: structured prompt templates
